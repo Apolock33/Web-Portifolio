@@ -1,0 +1,15 @@
+.generalDiv {
+    background-image: url('../imgs/background.svg');
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgHoverButtons:hover {
+    background-color: #1c1c1c64;
+}
+
+.bgNavButtons:hover{
+    background-color: #00b78991;
+}
