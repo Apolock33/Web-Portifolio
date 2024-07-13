@@ -1,0 +1,15 @@
+:root {
+  --primary-color: #00B788;
+  --secondary-color: #ffffff;
+  --theme-color: #1c1c1c;
+  color-scheme: light dark;
+  color: var(--secondary-color);
+  background-color: var(--theme-color);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--secondary-color);
+    background-color: var(--theme-color);
+  }
+}
