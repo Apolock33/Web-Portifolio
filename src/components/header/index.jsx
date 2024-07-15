@@ -76,7 +76,7 @@ const Header = ({ children }) => {
                     </div>
                 </Sidebar>
             </header>
-            <section className={`generalDiv ${!mobile ? 'p-8' : 'py-8'}`}>
+            <section className={`generalDiv ${!mobile ? 'p-8' : 'py-8 px-2'}`}>
                 {children}
             </section>
         </>
