@@ -4,6 +4,8 @@ import imgHome from '../../assets/imgs/img.png';
 import { Button } from 'primereact/button';
 import { FaDownload } from 'react-icons/fa'
 import Header from '../../components/header';
+import { AiFillBehanceCircle, AiFillGithub, AiFillInstagram } from 'react-icons/ai';
+import { IoLogoWhatsapp } from 'react-icons/io';
 
 const Home = () => {
     const {
@@ -12,25 +14,47 @@ const Home = () => {
 
     return (
         <Header>
-            <div className={`p-8 pb-0 ${mobile ? null : 'flex justify-content-between align-items-center'}`}>
+            <div className={`${mobile ? 'mt-4 flex flex-column justify-content-center align-items-center' : 'mt-8 p-1 flex justify-content-between align-items-center'}`}>
                 {mobile ?
                     <>
-                        <div>
-                            <h3>Olá, me chamo</h3>
-                            <h1 style={{ fontFamily: 'var(--title-font)' }}>Carlos Alberto Gomes</h1>
+                        <div className='mt-1'>
+                            <img src={imgHome} alt='img Home' className='max-w-10rem' />
                         </div>
-                        <div>
-
+                        <div className='text-center'>
+                            <h3 className='font-medium text-xl'>Olá, me chamo</h3>
+                            <h1 className='font-bold text-4xl text-primary m-0' style={{ fontFamily: 'var(--title-font) !important' }}>Carlos Alberto Gomes</h1>
+                            <h3 className='font-medium text-xl'>Desenvolvedor Full-Stack</h3>
+                            <Button icon={<FaDownload />} iconPos='right' rounded className='px-4 py-2 gap-3 bg-primary border-none'>
+                                <a href='public/Curriculo-Carlos-Alberto-Gomes-Front-End.pdf' download='Curriculo-Carlos-Alberto-Gomes-Front-End.pdf' className='no-underline text-white'>
+                                    Baixar Currículo
+                                </a>
+                            </Button>
+                            <div className='mt-3 flex justify-content-center gap-3'>
+                                <Button tooltip='Instagram' tooltipOptions={{ position: 'bottom' }} icon={<IoLogoWhatsapp size={25} className='min-w-15rem' />} rounded text className='border-primary text-primary' onClick={() => window.location.href = 'https://wa.me/+555521986933879?text=Oi!%20Tudo%20Bom?'} />
+                                <Button tooltip='Instagram' tooltipOptions={{ position: 'bottom' }} icon={<AiFillInstagram size={25} className='min-w-15rem' />} rounded text className='border-primary text-primary' onClick={() => window.location.href = 'https://www.instagram.com/ocarlosgomes75/'} />
+                                <Button tooltip='Github' tooltipOptions={{ position: 'bottom' }} icon={<AiFillGithub size={25} className='min-w-15rem' />} rounded text className='border-primary text-primary' onClick={() => window.location.href = 'https://github.com/apolock33'} />
+                                <Button tooltip='Behance' tooltipOptions={{ position: 'bottom' }} icon={<AiFillBehanceCircle size={25} className='min-w-15rem' />} rounded text className='border-primary text-primary' onClick={() => window.location.href = 'https://www.behance.net/carlosalberto75'} />
+                            </div>
                         </div>
                     </> :
                     <>
-                        <div>
+                        <div className='pt-5'>
                             <h3 className='font-medium text-2xl'>Olá, me chamo</h3>
                             <h1 className='font-bold text-6xl text-primary m-0' style={{ fontFamily: 'var(--title-font) !important' }}>Carlos Alberto Gomes</h1>
                             <h3 className='font-medium text-2xl'>Desenvolvedor Full-Stack</h3>
-                            <Button label='Baixar Currículo' icon={<FaDownload />} iconPos='right' rounded className='px-4 py-3 gap-3 bg-primary border-none'></Button>
+                            <div className='mt-3 flex align-items-center gap-3'>
+                            <Button icon={<FaDownload />} iconPos='right' rounded className='px-4 py-3 gap-3 bg-primary border-none'>
+                                <a href='public/Curriculo-Carlos-Alberto-Gomes-Front-End.pdf' download='Curriculo-Carlos-Alberto-Gomes-Front-End.pdf' className='no-underline text-white'>
+                                    Baixar Currículo
+                                </a>
+                            </Button>
+                                <Button tooltip='Instagram' tooltipOptions={{ position: 'bottom' }} icon={<IoLogoWhatsapp size={25} className='min-w-15rem' />} rounded text className='border-primary text-primary' onClick={() => window.location.href = 'https://wa.me/+555521986933879?text=Oi!%20Tudo%20Bom?'} />
+                                <Button tooltip='Instagram' tooltipOptions={{ position: 'bottom' }} icon={<AiFillInstagram size={25} className='min-w-15rem' />} rounded text className='border-primary text-primary' onClick={() => window.location.href = 'https://www.instagram.com/ocarlosgomes75/'} />
+                                <Button tooltip='Github' tooltipOptions={{ position: 'bottom' }} icon={<AiFillGithub size={25} className='min-w-15rem' />} rounded text className='border-primary text-primary' onClick={() => window.location.href = 'https://github.com/apolock33'} />
+                                <Button tooltip='Behance' tooltipOptions={{ position: 'bottom' }} icon={<AiFillBehanceCircle size={25} className='min-w-15rem' />} rounded text className='border-primary text-primary' onClick={() => window.location.href = 'https://www.behance.net/carlosalberto75'} />
+                            </div>
                         </div>
-                        <div>
+                        <div className='pt-5'>
                             <img src={imgHome} alt='img Home' className='max-w-20rem mr-4' />
                         </div>
                     </>}

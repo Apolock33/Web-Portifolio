@@ -1,0 +1,8 @@
+.p-card-subtitle{
+    color: #ffffff;
+}
+
+.p-link{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
