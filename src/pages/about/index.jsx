@@ -1,11 +1,14 @@
 import React from 'react';
+import Header from '../../components/header';
 
 const About = () => {
-    return ( 
-        <>
-            <h1 className='m-0'>About</h1>
-        </>
-     );
+    return (
+        <Header>
+            <div>
+                
+            </div>
+        </Header>
+    );
 }
- 
+
 export default About;

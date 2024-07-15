@@ -5,9 +5,11 @@ import { GlobalContext } from '../../contexts/global/globalContext';
 import { Button } from 'primereact/button';
 import { FiMenu } from 'react-icons/fi'
 import { Sidebar } from 'primereact/sidebar';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const Header = ({ children }) => {
+    const navigate = useNavigate();
     const [openSideMenu, setOpenSideMenu] = useState(false);
     const {
         mobile
@@ -48,16 +50,16 @@ const Header = ({ children }) => {
 
     return (
         <>
-            <header className='p-5 flex justify-content-between align-items-center'>
+            <header className='p-5 flex justify-content-between align-items-center   z-5'>
                 <div>
-                    <img src={logo} alt="logo" className='w-7rem hover:cursor-pointer' onClick={()=>window.location.href = '/'} />
+                    <img src={logo} alt="logo" className='w-7rem hover:cursor-pointer' onClick={()  => navigate('/')} />
                 </div>
                 {!mobile ?
                     <>
                         <div>
                             <nav className='flex align-items-center justify-content-center'>
                                 {navlinks.map((link) => (
-                                    <Button text key={link.id} label={link.label} className='text-white text-lg font-medium hover:text-primary mr-2 bgHoverButtons' onClick={() => window.location.href = link.path} />
+                                    <Button text key={link.id} label={link.label} className='text-white text-md font-medium hover:text-primary mr-2 bgHoverButtons p-2' onClick={() => { navigate(link.path) }} />
                                 ))}
                             </nav>
                         </div>
@@ -76,9 +78,9 @@ const Header = ({ children }) => {
                     </div>
                 </Sidebar>
             </header>
-            <div className='generalDiv'>
+            <section className='generalDiv'>
                 {children}
-            </div>
+            </section>
         </>
     );
 }
