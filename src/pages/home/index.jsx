@@ -24,11 +24,11 @@ const Home = () => {
                             <h3 className='font-medium text-xl'>Olá, me chamo</h3>
                             <h1 className='font-bold text-4xl text-primary m-0' style={{ fontFamily: 'var(--title-font) !important' }}>Carlos Alberto Gomes</h1>
                             <h3 className='font-medium text-xl'>Desenvolvedor Full-Stack</h3>
-                            <Button icon={<FaDownload />} iconPos='right' rounded className='px-4 py-2 gap-3 bg-primary border-none'>
-                                <a href='public/Curriculo-Carlos-Alberto-Gomes-Front-End.pdf' download='Curriculo-Carlos-Alberto-Gomes-Front-End.pdf' className='no-underline text-white'>
+                            <a href={`/Curriculo-Carlos-Alberto-Gomes-Front-End.pdf`} download='Curriculo-Carlos-Alberto-Gomes-Front-End.pdf' className='no-underline text-white'>
+                                <Button icon={<FaDownload />} iconPos='right' rounded className='px-4 py-2 gap-3 bg-primary border-none'>
                                     Baixar Currículo
-                                </a>
-                            </Button>
+                                </Button>
+                            </a>
                             <div className='mt-3 flex justify-content-center gap-3'>
                                 <Button tooltip='Instagram' tooltipOptions={{ position: 'bottom' }} icon={<IoLogoWhatsapp size={25} className='min-w-15rem' />} rounded text className='border-primary text-primary' onClick={() => window.location.href = 'https://wa.me/+555521986933879?text=Oi!%20Tudo%20Bom?'} />
                                 <Button tooltip='Instagram' tooltipOptions={{ position: 'bottom' }} icon={<AiFillInstagram size={25} className='min-w-15rem' />} rounded text className='border-primary text-primary' onClick={() => window.location.href = 'https://www.instagram.com/ocarlosgomes75/'} />
@@ -43,12 +43,12 @@ const Home = () => {
                             <h1 className='font-bold text-6xl text-primary m-0' style={{ fontFamily: 'var(--title-font) !important' }}>Carlos Alberto Gomes</h1>
                             <h3 className='font-medium text-2xl'>Desenvolvedor Full-Stack</h3>
                             <div className='mt-3 flex align-items-center gap-3'>
-                            <Button icon={<FaDownload />} iconPos='right' rounded className='px-4 py-3 gap-3 bg-primary border-none'>
-                                <a href='public/Curriculo-Carlos-Alberto-Gomes-Front-End.pdf' download='Curriculo-Carlos-Alberto-Gomes-Front-End.pdf' className='no-underline text-white'>
-                                    Baixar Currículo
+                                <a href={`/Curriculo-Carlos-Alberto-Gomes-Front-End.pdf`} download='Curriculo-Carlos-Alberto-Gomes-Front-End.pdf' className='no-underline text-white'>
+                                    <Button icon={<FaDownload />} iconPos='right' rounded className='px-4 py-3 gap-3 bg-primary border-none'>
+                                        Baixar Currículo
+                                    </Button>
                                 </a>
-                            </Button>
-                                <Button tooltip='Instagram' tooltipOptions={{ position: 'bottom' }} icon={<IoLogoWhatsapp size={25} className='min-w-15rem' />} rounded text className='border-primary text-primary' onClick={() => window.location.href = 'https://wa.me/+555521986933879?text=Oi!%20Tudo%20Bom?'} />
+                                <Button tooltip='WhatsApp' tooltipOptions={{ position: 'bottom' }} icon={<IoLogoWhatsapp size={25} className='min-w-15rem' />} rounded text className='border-primary text-primary' onClick={() => window.location.href = 'https://wa.me/+555521986933879?text=Oi!%20Tudo%20Bom?'} />
                                 <Button tooltip='Instagram' tooltipOptions={{ position: 'bottom' }} icon={<AiFillInstagram size={25} className='min-w-15rem' />} rounded text className='border-primary text-primary' onClick={() => window.location.href = 'https://www.instagram.com/ocarlosgomes75/'} />
                                 <Button tooltip='Github' tooltipOptions={{ position: 'bottom' }} icon={<AiFillGithub size={25} className='min-w-15rem' />} rounded text className='border-primary text-primary' onClick={() => window.location.href = 'https://github.com/apolock33'} />
                                 <Button tooltip='Behance' tooltipOptions={{ position: 'bottom' }} icon={<AiFillBehanceCircle size={25} className='min-w-15rem' />} rounded text className='border-primary text-primary' onClick={() => window.location.href = 'https://www.behance.net/carlosalberto75'} />
