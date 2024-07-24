@@ -5,6 +5,7 @@ import { Card } from 'primereact/card';
 import { Dialog } from 'primereact/dialog';
 import { GlobalContext } from "../../contexts/global/globalContext";
 import { useContext, useState } from "react";
+import '../../assets/css/general.css'
 
 const Expertise = () => {
     const { mobile } = useContext(GlobalContext);

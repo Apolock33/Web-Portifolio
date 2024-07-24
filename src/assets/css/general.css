@@ -1,3 +1,7 @@
+.p-card{
+    background: var(--theme-color) !important;
+}
+
 .p-card-subtitle {
     color: #ffffff;
 }
