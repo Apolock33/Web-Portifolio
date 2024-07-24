@@ -14,7 +14,7 @@ const Home = () => {
 
     return (
         <Header>
-            <div className={`${mobile ? 'mt-4 flex flex-column justify-content-center align-items-center' : 'mt-8 p-1 flex justify-content-between align-items-center mb-4'}`}>
+            <div className={`${mobile ? 'mt-4 flex flex-column justify-content-center align-items-center' : 'mt-8 p-1 flex justify-content-between align-items-center'}`}>
                 {mobile ?
                     <>
                         <div className='mt-1'>
