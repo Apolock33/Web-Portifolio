@@ -38,10 +38,3 @@ body {
 * {
   font-family: 'Montserrat', sans-serif;
 }
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: var(--secondary-color);
-    background-color: var(--theme-color);
-  }
-}
