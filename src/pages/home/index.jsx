@@ -4,7 +4,7 @@ import imgHome from '../../assets/imgs/img.png';
 import { Button } from 'primereact/button';
 import { FaDownload } from 'react-icons/fa'
 import Header from '../../components/header';
-import { AiFillBehanceCircle, AiFillGithub, AiFillInstagram } from 'react-icons/ai';
+import { AiFillBehanceCircle, AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { IoLogoWhatsapp } from 'react-icons/io';
 
 const Home = () => {
@@ -14,7 +14,7 @@ const Home = () => {
 
     return (
         <Header>
-            <div className={`${mobile ? 'mt-4 flex flex-column justify-content-center align-items-center' : 'mt-8 p-1 flex justify-content-between align-items-center'}`}>
+            <div className={`${mobile ? 'mt-4 flex flex-column justify-content-center align-items-center' : 'mt-8 p-1 flex justify-content-between align-items-center mb-4'}`}>
                 {mobile ?
                     <>
                         <div className='mt-1'>
@@ -34,6 +34,7 @@ const Home = () => {
                                 <Button tooltip='Instagram' tooltipOptions={{ position: 'bottom' }} icon={<AiFillInstagram size={25} className='min-w-15rem' />} rounded text className='border-primary text-primary' onClick={() => window.location.href = 'https://www.instagram.com/ocarlosgomes75/'} />
                                 <Button tooltip='Github' tooltipOptions={{ position: 'bottom' }} icon={<AiFillGithub size={25} className='min-w-15rem' />} rounded text className='border-primary text-primary' onClick={() => window.location.href = 'https://github.com/apolock33'} />
                                 <Button tooltip='Behance' tooltipOptions={{ position: 'bottom' }} icon={<AiFillBehanceCircle size={25} className='min-w-15rem' />} rounded text className='border-primary text-primary' onClick={() => window.location.href = 'https://www.behance.net/carlosalberto75'} />
+                                <Button tooltip='LinkedIn' tooltipOptions={{ position: 'bottom' }} icon={<AiFillLinkedin size={25} className='min-w-15rem' />} rounded text className='border-primary text-primary' onClick={() => window.location.href = 'https://www.linkedin.com/in/carlos-alberto-m-m-gomes-868204124/'} />
                             </div>
                         </div>
                     </> :
@@ -52,6 +53,7 @@ const Home = () => {
                                 <Button tooltip='Instagram' tooltipOptions={{ position: 'bottom' }} icon={<AiFillInstagram size={25} className='min-w-15rem' />} rounded text className='border-primary text-primary' onClick={() => window.location.href = 'https://www.instagram.com/ocarlosgomes75/'} />
                                 <Button tooltip='Github' tooltipOptions={{ position: 'bottom' }} icon={<AiFillGithub size={25} className='min-w-15rem' />} rounded text className='border-primary text-primary' onClick={() => window.location.href = 'https://github.com/apolock33'} />
                                 <Button tooltip='Behance' tooltipOptions={{ position: 'bottom' }} icon={<AiFillBehanceCircle size={25} className='min-w-15rem' />} rounded text className='border-primary text-primary' onClick={() => window.location.href = 'https://www.behance.net/carlosalberto75'} />
+                                <Button tooltip='LinkedIn' tooltipOptions={{ position: 'bottom' }} icon={<AiFillLinkedin size={25} className='min-w-15rem' />} rounded text className='border-primary text-primary' onClick={() => window.location.href = 'https://www.linkedin.com/in/carlos-alberto-m-m-gomes-868204124/'} />
                             </div>
                         </div>
                         <div className='pt-5'>
