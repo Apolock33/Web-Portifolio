@@ -3,6 +3,7 @@ import Home from "../pages/home";
 import About from "../pages/about";
 import Formation from "../pages/formation";
 import Projects from "../pages/projects";
+import Expertise from "../pages/expertise";
 
 
 const Routes = createBrowserRouter([
@@ -13,6 +14,10 @@ const Routes = createBrowserRouter([
     {
         path: "/sobre",
         element: <About />
+    },
+    {
+        path: "/experiencia",
+        element: <Expertise />
     },
     {
         path: '/formacao',

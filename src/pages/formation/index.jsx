@@ -60,7 +60,7 @@ const Formation = () => {
                     <h1 className='font-bold text-4xl text-primary m-0' style={{ fontFamily: 'var(--title-font) !important' }}>Minha Trajetória de Aprendizado</h1>
                 </div>
                 <div className='flex justify-content-between'>
-                    <Timeline value={events} align={`${mobile ? "right" : "alternate"}`} className="customized-timeline" marker={customizedMarker} content={customizedContent} />
+                    <Timeline value={events} align={`alternate`} className="customized-timeline" marker={customizedMarker} content={customizedContent} />
                 </div>
             </div>
         </Header>

@@ -1,8 +1,13 @@
-.p-card-subtitle{
+.p-card-subtitle {
     color: #ffffff;
 }
 
-.p-link{
+.p-link {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+}
+
+.p-dialog .p-dialog-header, .p-dialog .p-dialog-content {
+    background: var(--theme-color) !important;
+    color: var(--primary-color);
 }
